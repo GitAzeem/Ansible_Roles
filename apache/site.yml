@@ -1,0 +1,8 @@
+---
+- name: Apply Apache Role
+  hosts: all
+  become: yes
+  tasks:
+    - import_role:
+        name: ./tasks
+        tasks_from: main.yml

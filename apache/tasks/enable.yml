@@ -1,0 +1,7 @@
+---
+
+- name: ensure apache is running and enabled
+  systemd:
+    name: apache2
+    state: started
+    enabled: yes
