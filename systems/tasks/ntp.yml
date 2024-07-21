@@ -1,0 +1,5 @@
+---
+- name: install ntp.yml
+  apt:
+    name: ntp.yml
+    state: present

@@ -1,0 +1,6 @@
+---
+- name: install utility
+  apt:
+    name: tree
+    state: present
+    
