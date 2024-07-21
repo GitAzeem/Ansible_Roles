@@ -1,0 +1,13 @@
+---
+- name: mysql is started and enabled
+  systemd: 
+    name: mysql
+    state: started
+    enabled: yes
+
+- name: stop mysql
+  systemd:
+    name: mysql
+    state: stopped
+  notify:
+    - Restart MySQL

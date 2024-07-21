@@ -1,0 +1,6 @@
+---
+- name: install mysql mysql-server
+  include_task: install.yml
+
+- name: Ensure MySQL is enabled
+  include_task: enabled.yml
